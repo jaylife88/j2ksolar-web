@@ -21,3 +21,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 });
+
+// 햄버거 메뉴 클릭 동작 추가
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if(hamburger) {
+        hamburger.addEventListener('click', function() {
+            // 메뉴 창 열기/닫기
+            navMenu.classList.toggle('active');
+        });
+    }
