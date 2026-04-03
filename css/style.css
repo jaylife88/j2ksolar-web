@@ -184,3 +184,48 @@ footer {
         flex-direction: column;
     }
 }
+/* --- 블로그 포스팅 페이지 전용 스타일 --- */
+.blog-container {
+    max-width: 800px;
+    margin: 120px auto 60px; /* 상단 메뉴바에 안 가려지도록 여백 주기 */
+    padding: 0 20px;
+}
+
+.post-title {
+    font-size: 2rem;
+    color: #004494;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.post-meta {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-content p {
+    font-size: 1.05rem;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    word-break: keep-all;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #f1f3f5;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #e9ecef;
+}
