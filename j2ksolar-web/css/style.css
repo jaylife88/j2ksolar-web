@@ -1,0 +1,38 @@
+/* 기본 리셋 및 폰트 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+/* ... 나머지 기존 CSS 코드 동일하게 붙여넣기 ... */
+
+/* 새로 추가된 버튼 스타일 */
+#inquiry-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#inquiry-btn:hover {
+    background-color: #004494;
+}
