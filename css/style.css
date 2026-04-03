@@ -174,9 +174,35 @@ footer {
 
 /* 모바일 반응형 (화면이 작아졌을 때) */
 @media (max-width: 768px) {
-    .nav-menu {
-        display: none; /* 모바일에서는 임시로 메뉴 숨김 */
+    /* 햄버거 버튼 보이기 */
+    .hamburger {
+        display: flex; 
     }
+
+    /* 모바일용 세로 메뉴 디자인 */
+    .nav-menu {
+        position: absolute;
+        top: 80px; /* 헤더 높이 바로 아래 */
+        left: -100%; /* 평소에는 화면 왼쪽 바깥으로 숨겨둠 */
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s; /* 부드럽게 나타나는 효과 */
+        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+        padding: 20px 0;
+        gap: 0;
+    }
+
+    /* 자바스크립트로 .active 클래스가 추가되면 화면에 나타남 */
+    .nav-menu.active {
+        left: 0; 
+    }
+
+    .nav-menu li {
+        margin: 15px 0;
+    }
+
     .hero h2 {
         font-size: 2rem;
     }
@@ -228,4 +254,18 @@ footer {
 
 .back-btn:hover {
     background-color: #e9ecef;
+}
+/* 햄버거 메뉴 버튼 기본 설정 (PC에서는 숨김) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
 }
